@@ -37,12 +37,12 @@ p {
 /* Carousel */
 
 #carouselExampleIndicators {
-    height: 520px;
+    height: 33rem;
     width: 100%;
 }
 
 .carousel-inner img {
-    height: 520px;
+   height:33rem;
     width: 100%;
 }
 
@@ -56,9 +56,14 @@ p {
 
 /*Productos index*/
 
+.conteiner-products{
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
 figure {
-    height: 250px;
-    width: 240px;
+    height: 15.4rem;
+    width: 100%;
 }
 
 .productimg {
@@ -71,7 +76,6 @@ figure {
     padding: 1rem 1rem 2rem 2.5rem;
     gap: 1.5rem;
     width: 100%;
-    background-color: #F5F5F5;
 }
 
 #products-card {
@@ -107,7 +111,7 @@ figure {
     display: flex;
     justify-content: center;
     padding: 5px 0;
-    font-size: 25px;
+    font-size: 22.5px;
 }
 
 .conteiner-button {
