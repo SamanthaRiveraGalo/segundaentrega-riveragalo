@@ -21,16 +21,6 @@ p {
     color: black;
 }
 
-.btn-outline-success {
-    color: black;
-    border-color: black;
-}
-
-.btn-outline-success:hover {
-    background-color: #D2001A;
-    border-color: #D2001A;
-}
-
 .nav-link {
     color: black;
 }
