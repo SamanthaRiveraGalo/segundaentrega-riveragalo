@@ -36,14 +36,23 @@ p {
 
 /* Carousel */
 
-#carouselExampleIndicators {
-    height: 33rem;
-    width: 100%;
+.carousel-inner {
+    max-height: 33.5rem;
 }
 
-.carousel-inner img {
-   height:33rem;
-    width: 100%;
+.img-fluid {
+    max-height: 33rem;
+    object-fit: cover;
+}
+
+.carousel-control-prev {
+    justify-content: start;
+    padding-left: 1.5rem;
+}
+
+.carousel-control-next {
+    justify-content: end;
+    padding-right: 1.5rem;
 }
 
 /* titulo*/
@@ -56,14 +65,13 @@ p {
 
 /*Productos index*/
 
-.conteiner-products{
-    width: 100%;
+.conteiner-products {
     background-color: #F5F5F5;
 }
 
 figure {
     height: 15.4rem;
-    width: 100%;
+    width: 15rem;
 }
 
 .productimg {
@@ -185,6 +193,32 @@ figure {
 .fa-phone {
     color: #D2001A;
     font-size: 20px;
+}
+
+@media screen and (max-width:576px) {
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .logo {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-networks {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .location-info {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .phone-number {
+        grid-area: 3 / 1 / 4 / 2;
+    }
 }
 
 /* PAGE xiaomi-motorola-samsung*/
@@ -334,7 +368,6 @@ h3 {
     padding: 1rem 0 0 1.5rem;
 }
 
-
 .section-h2 {
     padding: 2rem 0;
     border: 1ps xolid black;
@@ -347,6 +380,7 @@ h3 {
 
 .personal-info {
     padding: 3rem 0;
+    width: 100%;
 }
 
 .info-fullname {
@@ -579,20 +613,20 @@ td {
     background-image: url(../img/novedadesfondo.jpg);
 }
 
-.novedades-rotulo{
+.novedades-rotulo {
     background-color: #F5F5F5;
     border-radius: 10px;
     padding: 0.5rem 1rem;
 }
 
-.novedades-tittle{
-    grid-area: 1 / 1 / 2 / 3; 
+.novedades-tittle {
+    grid-area: 1 / 1 / 2 / 3;
     display: flex;
     justify-content: center;
     padding: 2rem 0;
 }
 
-.novedades-item1{
+.novedades-item1 {
     grid-area: 2 / 1 / 3 / 2;
     display: grid;
     justify-content: center;
@@ -603,7 +637,7 @@ td {
     border: 1px solid white;
 }
 
-.novedades-item2{
+.novedades-item2 {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     justify-content: center;
@@ -614,8 +648,8 @@ td {
     border: 1px solid white;
 }
 
-.novedades-item3{
-    grid-area: 3 / 1 / 4 / 2; 
+.novedades-item3 {
+    grid-area: 3 / 1 / 4 / 2;
     display: grid;
     justify-content: center;
     padding: 1rem 0;
@@ -625,7 +659,7 @@ td {
     border: 1px solid white;
 }
 
-.novedades-item4{
+.novedades-item4 {
     grid-area: 3 / 2 / 4 / 3;
     display: grid;
     justify-content: center;
@@ -636,26 +670,21 @@ td {
     border: 1px solid white;
 }
 
-.novedades-item-img{
- height: 100%;
- width: 100%;
- padding: 0 1rem;
+.novedades-item-img {
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
 }
 
-.novedades-img{
+.novedades-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.novedades-name{
+.novedades-name {
     display: flex;
     justify-content: center;
     font-size: 30px;
 }
-
-/*Medias Queries*/
-
-/*Index*/
-
