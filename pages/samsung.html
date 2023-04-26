@@ -69,6 +69,53 @@
     </section>
 
     <main class="conteiner-fluid">
+        
+        <!--Estructura del filtro version mobile-->
+        <section class="filler-mobile">
+            <p class="filler-tittle">
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Filtro
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <div class="phone-brand">
+                        <p class="marcas">Marcas</p>
+                        <label class="conteiner-checkbox" for="">
+                            <input type="checkbox" name="Xiaomi" id="marca">Xiaomi
+                        </label>
+                        <label class="conteiner-checkbox" for="">
+                            <input type="checkbox" name="Samsung" id="marca">Samsung
+                        </label>
+                        <label class="conteiner-checkbox" for="">
+                            <input type="checkbox" name="Motorola" id="marca">Motorola
+                        </label>
+                    </div>
+                    <div class="conteiner-price-filler">
+                        <p class="price-filler">Precios</p>
+                        <input type="range" min="25.000" max="300.000" name="precios" id="price-range">
+                    </div>
+                    <div class="conteiner-memory-ram">
+                        <p class="memory-ram">Memoria Ram</p>
+                        <label class="ram" for=""><input type="checkbox" name="">2GB</label>
+                        <label class="ram" for=""><input type="checkbox" name="">4GB</label>
+                        <label class="ram" for=""><input type="checkbox" name="">6GB</label>
+                        <label class="ram" for=""><input type="checkbox" name="">8GB</label>
+                        <label class="ram" for=""><input type="checkbox" name="">12GB</label>
+                    </div>
+                    <div class="conteiner-internal-memory">
+                        <p class="internal-memory">Memoria Interna</p>
+                        <label class="memoria-interna" for=""><input type="checkbox" name="">32GB</label>
+                        <label class="memoria-interna" for=""><input type="checkbox" name="">64GB</label>
+                        <label class="memoria-interna" for=""><input type="checkbox" name="">128GB</label>
+                        <label class="memoria-interna" for=""><input type="checkbox" name="">256GB</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin de estructura del filtro version mobile-->
+        
         <div class="row" id="all-products">
             <div class="col-2">
                 <!--Filtro-->
