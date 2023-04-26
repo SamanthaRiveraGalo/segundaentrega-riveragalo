@@ -39,6 +39,13 @@ p {
     box-shadow: none;
 }
 
+/* Medias queries para una distribucion de los elemento del nav*/
+@media screen and (max-width:465px) {
+ .navbar-brand{
+    width: 100%;
+ }
+}
+
 /* Carousel */
 
 .carousel-inner {
@@ -333,27 +340,33 @@ h3 {
     .col-2 {
         display: none;
     }
+
     .filler-mobile {
         display: block;
         padding-bottom: 2rem;
     }
-    .filler-tittle{
+
+    .filler-tittle {
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
     .btn {
         padding: 1rem 2rem;
     }
+
     .card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    .col-10{
+
+    .col-10 {
         width: 100%;
     }
-    #principal-content{
+
+    #principal-content {
         padding: 0;
     }
 }
@@ -404,108 +417,6 @@ h3 {
 #pagination {
     padding: 1.5rem 0;
     margin: 0;
-}
-
-/*Contacto*/
-
-.conteiner-contact {
-    background-image: url(../img/contactanos.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.first-tittle {
-    font-size: 30px;
-    padding: 1rem 0 0 1.5rem;
-}
-
-.section-h2 {
-    padding: 2rem 0;
-    border: 1ps xolid black;
-    font-size: 35px;
-    color: black;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.personal-info {
-    padding: 3rem 0;
-    width: 100%;
-}
-
-.info-fullname {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
-}
-
-.email-phone {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
-}
-
-.comment {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
-}
-
-.send {
-    display: flex;
-    justify-content: end;
-    padding-right: 24rem;
-}
-
-#name {
-    padding: 0.4rem 3rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
-}
-
-#full-name {
-    padding: 0.4rem 3rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
-}
-
-#email {
-    padding: 0.4rem 3rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
-}
-
-#phone {
-    padding: 0.4rem 3rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
-}
-
-#comment {
-    padding: 5rem 12.5rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
-}
-
-.send-button {
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 0.4rem 1rem;
-    background-color: white;
-}
-
-.send-button:hover {
-    background-color: #D2001A;
-    color: white;
 }
 
 /*Productos individuales xiaomi-moto-samg*/
@@ -625,6 +536,108 @@ h3 {
     padding: 1rem 0;
     display: flex;
     justify-content: center;
+}
+
+/*Contacto*/
+
+.conteiner-contact {
+    background-image: url(../img/contactanos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.first-tittle {
+    font-size: 30px;
+    padding: 1rem 0 0 1.5rem;
+}
+
+.section-h2 {
+    padding: 2rem 0;
+    border: 1ps xolid black;
+    font-size: 35px;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-info {
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.info-fullname {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.email-phone {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.send {
+    display: flex;
+    justify-content: end;
+    padding-right: 24rem;
+}
+
+#name {
+    padding: 0.4rem 3rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 4px 2px #aaadaf;
+}
+
+#full-name {
+    padding: 0.4rem 3rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 4px 2px #aaadaf;
+}
+
+#email {
+    padding: 0.4rem 3rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 4px 2px #aaadaf;
+}
+
+#phone {
+    padding: 0.4rem 3rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 4px 2px #aaadaf;
+}
+
+#comment {
+    padding: 5rem 12.5rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 4px 2px #aaadaf;
+}
+
+.send-button {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    background-color: white;
+}
+
+.send-button:hover {
+    background-color: #D2001A;
+    color: white;
 }
 
 /*Page Novedades*/
