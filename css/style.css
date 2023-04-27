@@ -41,9 +41,9 @@ p {
 
 /* Medias queries para una distribucion de los elemento del nav*/
 @media screen and (max-width:465px) {
- .navbar-brand{
-    width: 100%;
- }
+    .navbar-brand {
+        width: 100%;
+    }
 }
 
 /* Carousel */
@@ -563,81 +563,125 @@ h3 {
 }
 
 .personal-info {
-    padding: 3rem 0;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1fr 1fr 1fr 10rem);
+    grid-row-gap: 2rem;
 }
 
-.info-fullname {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
+.conteiner-name {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
-.email-phone {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding-bottom: 2rem;
+.conteiner-fullname {
+    grid-area: 1 / 3 / 2 / 4;
 }
 
-.comment {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
+.conteiner-email {
+    grid-area: 2 / 2 / 3 / 3;
 }
 
-.send {
-    display: flex;
-    justify-content: end;
-    padding-right: 24rem;
+.conteiner-phone {
+    grid-area: 2 / 3 / 3 / 4;
 }
 
-#name {
-    padding: 0.4rem 3rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
+.conteiner-comment {
+    grid-area: 3 / 2 / 4 / 4;
 }
 
-#full-name {
-    padding: 0.4rem 3rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
+.conteiner-send {
+    grid-area: 4 / 2 / 5 / 4;
 }
 
-#email {
-    padding: 0.4rem 3rem;
-    border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
-}
-
+#name,
+#full-name,
+#email,
 #phone {
-    padding: 0.4rem 3rem;
+    padding: 0.5rem 5rem 0.5rem 0;
     border-radius: 5px;
     border: 1px solid grey;
     box-shadow: 1px 1px 4px 2px #aaadaf;
 }
 
 #comment {
-    padding: 5rem 12.5rem;
+    width: 38.5rem;
+    padding-bottom: 10rem;
     border-radius: 5px;
     border: 1px solid grey;
     box-shadow: 1px 1px 4px 2px #aaadaf;
 }
 
+.conteiner-send {
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: end;
+    padding-right: 3.6rem;
+}
+
 .send-button {
     border: 1px solid grey;
     border-radius: 5px;
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 2rem;
     background-color: white;
+    box-shadow: 1px 1px 4px 2px #aaadaf;
 }
 
 .send-button:hover {
     background-color: #D2001A;
     color: white;
+}
+
+@media screen and (max-width:576px) {
+    .personal-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 5rem 1fr );
+        justify-items: center;
+    }
+    .conteiner-name {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .conteiner-fullname {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    .conteiner-email {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    .conteiner-phone {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    .conteiner-comment {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+    
+    .conteiner-send {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .conteriner-personal-info {
+        width: 100%;
+    }
+
+    .conteiner-name, 
+    .conteiner-fullname, 
+    .conteiner-email, 
+    .conteiner-phone, 
+    .conteiner-comment {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .info-name, .info-fullname, .info-email, .info-phone, .comment{ width: 100%;}
+
+    #name, #full-name, #email, #phone, #comment{width: 100%;}
+
+    .conteiner-send{
+        padding:0 0 2rem 0;
+    }
 }
 
 /*Page Novedades*/
