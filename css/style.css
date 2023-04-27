@@ -733,7 +733,8 @@ h3 {
 }
 
 .novedades-item-img {
-    margin: 0;
+    margin: auto;
+    height: 15rem;
     width: 100%;
 }
 
