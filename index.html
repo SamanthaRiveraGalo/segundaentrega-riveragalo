@@ -15,16 +15,16 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logo" src="img/CellShoplogo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid navbar-mobile">
+                <a class="navbar-brand m-0" href="#"><img class="logo" src="img/CellShoplogo.png" alt=""></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto gap-4 mb-2 mb-lg-0 ">
+                    <ul class="navbar-nav m-auto gap-5 mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
@@ -49,13 +49,13 @@
                             <a class="nav-link active" aria-current="page" href="pages/nosotros.html">Novedades</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                    <form class="d-flex m-auto search-box" role="search">
+                        <input class="box-input form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-dark box-button" type="submit">Buscar</button>
                     </form>
                 </div>
-                <div class="shoppingcar">
-                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <div class="shoping d-flex pe-2">
+                    <img class="shopping-cart" src="assets/bx-cart.svg" alt="">
                 </div>
             </div>
         </nav>
@@ -97,7 +97,10 @@
     <!--titulo-->
 
     <section class="conteiner-tittle">
+       <div class="tittle-box-info">
         <h1 class="tittle">Los más Buscados</h1>
+        <p><a class="tittle-catalogo" href="">Ver catálogo <span class="catalogo-span">Completo</span></a></p>
+       </div>
     </section>
 
     <!--Productos-->
@@ -105,7 +108,7 @@
     <section class="conteiner products">
         <div id="row-index" class="row">
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <a href="pages/XiaomiX5pro.html"><img class="productimg" src="img/Xiaomix5pro.png"
                             alt="Xiaomi X5 Pro 12GB/256GB"></a>
                 </figure>
@@ -113,6 +116,8 @@
                     <p class="name">Xiaomi X5 Pro</p>
                     <p class="memory">12GB/256GB</p>
                     <p class="price">$148.000</p>
+                    <button class="circule-b"></button>
+                    <button class="circule-y"></button>
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>
@@ -120,13 +125,15 @@
             </div>
 
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <img class="productimg" src="img/motorolag-30.jpg" alt="Motorola G30 4GB/128GB">
                 </figure>
                 <div class="info-product">
                     <p class="name">Motorola G30</p>
                     <p class="memory">4GB/128GB</p>
                     <p class="price">$146.500</p>
+                    <button class="circule-b"></button>
+                    <button class="circule-p"></button>
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>
@@ -134,13 +141,18 @@
             </div>
 
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <img class="productimg" src="img/samsungs23ultra.png" alt="Samsung S23 ultra 12GB/256GB">
                 </figure>
                 <div class="info-product">
                     <p class="name">Samsung S23 ultra</p>
                     <p class="memory">12GB/256GB</p>
                     <p class="price">$390.000</p>
+                    <button class="circule-b"></button>
+                    <button class="circule-p"></button>
+                    <button class="circule-g"></button>
+                    <button class="circule-c"></button>
+                    
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>
@@ -148,13 +160,16 @@
             </div>
 
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <img class="productimg" src="img/motorola30fusion.jpg" alt="Motorola Edge 30 Fusion 8GB/128GB">
                 </figure>
                 <div class="info-product">
                     <p class="name">Motorola Edge 30 Fusion</p>
                     <p class="memory">8GB/128GB</p>
                     <p class="price">$205.000</p>
+                    <button class="circule-grey"></button>
+                    <button class="circule-blue"></button>
+                    <button class="circule-s"></button>
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>
@@ -162,13 +177,16 @@
             </div>
       
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <img class="productimg" src="img/xiaominote118128.png" alt="Xiaomi Note 11S 8GB/128GB">
                 </figure>
                 <div class="info-product">
                     <p class="name">Xiaomi Note 11S</p>
                     <p class="memory">8GB/128GB</p>
                     <p class="price">$92.000</p>
+                    <button class="circule-b"></button>
+                    <button class="circule-blue"></button>
+                    <button class="circule-sb"></button>
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>
@@ -176,13 +194,16 @@
             </div>
 
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <img class="productimg" src="img/samsunga23.jpg" alt="Samsung A23 4GB/128GB">
                 </figure>
                 <div class="info-product">
                     <p class="name">Samsung A23</p>
                     <p class="memory">4GB/128GB</p>
                     <p class="price">$86.000</p>
+                    <button class="circule-sb"></button>
+                    <button class="circule-b"></button>
+                    <button class="circule-w"></button>
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>
@@ -190,13 +211,16 @@
             </div>
 
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <img class="productimg" src="img/xiaominote11pro.jpg" alt="Xiaomi Note 11Pro 6GB/128GB">
                 </figure>
                 <div class="info-product">
                     <p class="name">Xiaomi Note 11Pro</p>
                     <p class="memory">6GB/128GB</p>
                     <p class="price">$105.000</p>
+                    <button class="circule-grey"></button>
+                    <button class="circule-g"></button>
+                    <button class="circule-sb"></button>
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>
@@ -204,13 +228,17 @@
             </div>
 
             <div id="products-card" class="col-3">
-                <figure>
+                <figure class="box-img-product">
                     <img class="productimg" src="img/xiaominote10pro.png" alt="Xiaomi Note 10Pro 8GB/256GB">
                 </figure>
                 <div class="info-product">
                     <p class="name">Xiaomi Note 10Pro</p>
                     <p class="memory">8GB/256GB</p>
                     <p class="price">$112.000</p>
+                    <button class="circule-blue"></button>
+                    <button class="circule-g"></button>
+                    <button class="circule-sb"></button>
+                    <button class="circule-peach"></button>
                 </div>
                 <div class="conteiner-button">
                     <button class="buy">Comprar</button>

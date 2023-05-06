@@ -15,15 +15,31 @@ p {
     margin-right: 10rem;
 }
 
-.logo {
-    width: 100%;
-    height: 100%;
+.navbar-brand {
+    max-height: 2rem;
+    max-width: 8rem;
+    padding: 0
 }
 
-.fa-cart-shopping {
-    padding: 0 1.25rem;
-    font-size: 1.4rem;
-    color: black;
+.logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+.search-box{
+    height: 2.1rem;
+}
+.box-button{
+    display: flex;
+    align-items: center;
+}
+.box-input:hover{
+    border-color: black;
+}
+
+.shopping-cart {
+    height: 2rem;
+    width: 2rem;
 }
 
 .nav-link {
@@ -37,13 +53,6 @@ p {
 
 .form-control:hover {
     box-shadow: none;
-}
-
-/* Medias queries para una distribucion de los elemento del nav*/
-@media screen and (max-width:465px) {
-    .navbar-brand {
-        width: 100%;
-    }
 }
 
 /* Carousel */
@@ -66,11 +75,57 @@ p {
 }
 
 /* titulo*/
+.conteiner-tittle{
+    background-color: #F5F5F5;
+    padding: 0.5rem 0;
+}
 
-.conteiner-tittle {
+.tittle-box-info{
     display: flex;
-    justify-content: center;
-    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    padding: 1rem 0;
+}
+
+.tittle{
+    font-size: 35px;
+    padding-left: 1rem;
+}
+
+.tittle-catalogo{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.tittle-catalogo:hover{
+    border-bottom: 1px solid #252525; /*poner luego bien la transicion*/
+}
+.catalogo-span{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding-right: 1rem;
+}
+.tittle-catalogo-mobile{
+    display: none;
+}
+@media screen and (max-width:860px){
+    .conteiner-tittle{
+        padding-bottom: 0;
+    }
+    .tittle-box-info{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .tittle-catalogo{
+        display: none;
+    }
+    .tittle{
+        font-size: 2rem;
+    }
 }
 
 /*Productos index*/
@@ -114,25 +169,80 @@ figure {
     transform: translateY(-3px);
 }
 
+.box-img-product{
+    margin: 0;
+}
+
 .price {
     display: flex;
-    justify-content: center;
+    justify-content: ;
     padding: 0.3rem 0;
     font-size: 1.563rem;
 }
 
 .name {
     display: flex;
-    justify-content: center;
-    padding: 0.3rem 0;
+    justify-content: ;
+    padding: 0;
     font-size: 1.563rem;
 }
 
 .memory {
     display: flex;
-    justify-content: center;
+    
     padding: 0.3rem 0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+}
+
+.circule-y,
+.circule-b,
+.circule-p,
+.circule-g,
+.circule-c,
+.circule-grey,
+.circule-blue,
+.circule-s,
+.circule-sb,
+.circule-w,
+.circule-peach{
+    padding: 0.8rem;
+    margin: 0 0.2rem;
+    border: 1px solid grey;
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 5px 2px #D8D9CF;
+}
+.circule-peach{
+    background-color: #FFD3B0;
+}
+.circule-w{
+    background-color: #fff;
+}
+.circule-sb{
+    background-color: #ECF2FF;
+}
+.circule-s{
+    background-color: #EEEEEE;
+}
+.circule-blue{
+    background-color: #394867;
+}
+.circule-grey{
+    background-color: #434242;
+}
+.circule-c{
+    background-color: #F8EAD8;
+}
+.circule-g{
+    background-color: #3C6255;
+}
+.circule-p{
+    background-color: #FEC8D8;
+}
+.circule-b{
+    background-color: #252525;
+}
+.circule-y{
+ background-color: #F5EA5A;
 }
 
 .conteiner-button {
@@ -207,12 +317,12 @@ figure {
 }
 
 .fa-location-dot {
-    color: #D2001A;
+    
     font-size: 1.25rem;
 }
 
 .fa-phone {
-    color: #D2001A;
+    
     font-size: 1.25rem;
 }
 
