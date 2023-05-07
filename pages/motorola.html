@@ -61,21 +61,32 @@
         </nav>
     </header>
 
-    <section class="conteiner">
-        <div class="row-tittle">
+
+    <!--bannercito-->
+
+    <section class="conteiner-banner-products">
+        <img src="../img/banner-motorola-6.jpg" class="img-fluid" alt="banner motorola">
+    </section>
+
+    <!--titulos-->
+
+    <section class="conteiner conteiner-tittles">
+        <div class=" row-tittle">
             <h1 class="tittles-section">Motorola</h1>
-            <h2 class="second-tittle">Catálogo</h2>
+            <h2 class="second-tittle">Catálogo de productos</h2>
         </div>
     </section>
 
-    <main class="conteiner-fluid">
+    <main class="conteiner-fluid" id="principal-content">
 
         <!--Estructura del filtro version mobile-->
         <section class="filler-mobile">
             <p class="filler-tittle">
-                <button class="btn btn-light btn-outline-secondary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn bg-light-subtle btn-outline-secondary text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
                     Filtro
+                    <img class="filter-img" src="../assets/bx-filter.svg" alt="">
                 </button>
             </p>
             <div class="collapse" id="collapseExample">
@@ -93,8 +104,10 @@
                         </label>
                     </div>
                     <div class="conteiner-price-filler">
-                        <p class="price-filler">Precios</p>
-                        <input type="range" min="25.000" max="300.000" name="precios" id="price-range">
+                        <p class="price-filler-tittle">Precios</p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Hasta $45.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">$45.000 a $100.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Más de $100.000</a></p>
                     </div>
                     <div class="conteiner-memory-ram">
                         <p class="memory-ram">Memoria Ram</p>
@@ -115,7 +128,7 @@
             </div>
         </section>
         <!--Fin de estructura del filtro version mobile-->
-        
+
         <div class="row" id="all-products">
             <div class="col-2">
                 <!--Filtro-->
@@ -136,8 +149,10 @@
                         </label>
                     </div>
                     <div class="conteiner-price-filler">
-                        <p class="price-filler">Precios</p>
-                        <input type="range" min="25.000" max="300.000" name="precios" id="price-range">
+                        <p class="price-filler-tittle">Precios</p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Hasta $45.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">$45.000 a $100.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Más de $100.000</a></p>
                     </div>
                     <div class="conteiner-memory-ram">
                         <p class="memory-ram">Memoria Ram</p>
@@ -170,6 +185,9 @@
                             <p class="name">Motorola Edge 30 Neo</p>
                             <p class="memory">8GB/256GB</p>
                             <p class="price">$148.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-s"></button>
+                            <button class="circule-p"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -178,12 +196,16 @@
 
                     <div id="products-card" class="col-3">
                         <figure>
-                            <img class="productimg" src="../img/motorola30fusion.jpg" alt="Motorola 30 Fusion 8GB/128GB">
+                            <img class="productimg" src="../img/motorola30fusion.jpg"
+                                alt="Motorola 30 Fusion 8GB/128GB">
                         </figure>
                         <div class="info-product">
                             <p class="name">Motorola Edge 30 Fusion</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$146.500</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-blue"></button>
+                            <button class="circule-w"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -191,21 +213,23 @@
                     </div>
                     <div id="products-card" class="col-3">
                         <figure>
-                            <a href=""><img class="productimg" src="../img/motorolag22.png"
-                                    alt="Motorola G42"></a>
+                            <a href=""><img class="productimg" src="../img/motorolag22.png" alt="Motorola G42"></a>
                         </figure>
                         <div class="info-product">
                             <p class="name">Motorola G42</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$59.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-blue"></button>
+                            <button class="circule-y"></button>
+                            <button class="circule-w"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
                         </div>
                     </div>
-                </div>
 
-                <div class="row" id="products">
                     <div id="products-card" class="col-3">
                         <figure>
                             <img class="productimg" src="../img/motorolaG32.png" alt="Motorola G32">
@@ -214,6 +238,9 @@
                             <p class="name">Motorola G32</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$65.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-s"></button>
+                            <button class="circule-c"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -222,13 +249,15 @@
 
                     <div id="products-card" class="col-3">
                         <figure>
-                            <img class="productimg" src="../img/motorolag42.png"
-                                alt="Motorola G42">
+                            <img class="productimg" src="../img/motorolag42.png" alt="Motorola G42">
                         </figure>
                         <div class="info-product">
                             <p class="name">Motorola G42</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$69.000</p>
+                            <button class="circule-blue"></button>
+                            <button class="circule-c"></button>
+                            <button class="circule-s"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -243,6 +272,10 @@
                             <p class="name">Motorola E40</p>
                             <p class="memory">4GB/64GB</p>
                             <p class="price">$51.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-blue"></button>
+                            <button class="circule-c"></button>
+                            <button class="circule-w"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -252,17 +285,17 @@
 
                 <!--paginacion-->
 
-                <div id="pagination" class="row">
+                <div id="pagination" class="row pb-4 pt-4 m-0">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
+                        <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
-                                <a class="page-link">Previous</a>
+                                <a class="page-link">Anterior</a>
                             </li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
+                                <a class="page-link" href="#">Siguiente</a>
                             </li>
                         </ul>
                     </nav>
@@ -306,4 +339,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>

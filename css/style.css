@@ -26,14 +26,17 @@ p {
     width: 100%;
     object-fit: cover
 }
-.search-box{
+
+.search-box {
     height: 2.1rem;
 }
-.box-button{
+
+.box-button {
     display: flex;
     align-items: center;
 }
-.box-input:hover{
+
+.box-input:hover {
     border-color: black;
 }
 
@@ -75,12 +78,12 @@ p {
 }
 
 /* titulo*/
-.conteiner-tittle{
-    background-color: #F5F5F5;
+.conteiner-tittle {
+    background-color: #fefefe;
     padding: 0.5rem 0;
 }
 
-.tittle-box-info{
+.tittle-box-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,42 +91,50 @@ p {
     padding: 1rem 0;
 }
 
-.tittle{
+.tittle {
     font-size: 35px;
     padding-left: 1rem;
 }
 
-.tittle-catalogo{
+.tittle-catalogo {
     font-size: 18px;
     text-decoration: none;
     color: black;
 }
-.tittle-catalogo:hover{
-    border-bottom: 1px solid #252525; /*poner luego bien la transicion*/
+
+.tittle-catalogo:hover {
+    border-bottom: 1px solid #252525;
+    /*poner luego bien la transicion*/
 }
-.catalogo-span{
+
+.catalogo-span {
     font-size: 18px;
     font-weight: bold;
     color: black;
     padding-right: 1rem;
 }
-.tittle-catalogo-mobile{
+
+.tittle-catalogo-mobile {
     display: none;
 }
-@media screen and (max-width:860px){
-    .conteiner-tittle{
+
+@media screen and (max-width:860px) {
+    .conteiner-tittle {
         padding-bottom: 0;
     }
-    .tittle-box-info{
+
+    .tittle-box-info {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding-bottom: 0;
     }
-    .tittle-catalogo{
+
+    .tittle-catalogo {
         display: none;
     }
-    .tittle{
+
+    .tittle {
         font-size: 2rem;
     }
 }
@@ -157,8 +168,8 @@ figure {
     border-radius: 0.6rem;
     width: 19rem;
     padding: 0.6rem 0;
-    background-color: white;
-    box-shadow: 1px 1px 4px 2px #aaadaf;
+    background-color: #FFFDF9;
+    box-shadow: 1px 1px 4px 2px #D8D8D8;
     transition: all 400ms ease;
     display: grid;
     justify-content: center;
@@ -169,27 +180,24 @@ figure {
     transform: translateY(-3px);
 }
 
-.box-img-product{
+.box-img-product {
     margin: 0;
 }
 
 .price {
     display: flex;
-    justify-content: ;
-    padding: 0.3rem 0;
+    padding: 0.28rem 0;
     font-size: 1.563rem;
 }
 
 .name {
     display: flex;
-    justify-content: ;
     padding: 0;
     font-size: 1.563rem;
 }
 
 .memory {
     display: flex;
-    
     padding: 0.3rem 0;
     font-size: 1.3rem;
 }
@@ -204,45 +212,56 @@ figure {
 .circule-s,
 .circule-sb,
 .circule-w,
-.circule-peach{
+.circule-peach {
     padding: 0.8rem;
     margin: 0 0.2rem;
     border: 1px solid grey;
     border-radius: 50%;
     box-shadow: 0.5px 0.5px 5px 2px #D8D9CF;
 }
-.circule-peach{
+
+.circule-peach {
     background-color: #FFD3B0;
 }
-.circule-w{
+
+.circule-w {
     background-color: #fff;
 }
-.circule-sb{
+
+.circule-sb {
     background-color: #ECF2FF;
 }
-.circule-s{
+
+.circule-s {
     background-color: #EEEEEE;
 }
-.circule-blue{
+
+.circule-blue {
     background-color: #394867;
 }
-.circule-grey{
+
+.circule-grey {
     background-color: #434242;
 }
-.circule-c{
+
+.circule-c {
     background-color: #F8EAD8;
 }
-.circule-g{
+
+.circule-g {
     background-color: #3C6255;
 }
-.circule-p{
+
+.circule-p {
     background-color: #FEC8D8;
 }
-.circule-b{
+
+.circule-b {
     background-color: #252525;
 }
-.circule-y{
- background-color: #F5EA5A;
+
+.circule-y {
+    background-color: #F5EA5A;
 }
 
 .conteiner-button {
@@ -255,8 +274,10 @@ figure {
     padding: 0.6rem 0.9rem;
     border: 1px solid black;
     border-radius: 0.6rem;
-    background-color: white;
+    color: black;
     font-size: 1rem;
+    background-color: white;
+
 }
 
 .buy:hover {
@@ -317,12 +338,12 @@ figure {
 }
 
 .fa-location-dot {
-    
+
     font-size: 1.25rem;
 }
 
 .fa-phone {
-    
+
     font-size: 1.25rem;
 }
 
@@ -355,6 +376,18 @@ figure {
 }
 
 /* PAGE xiaomi-motorola-samsung*/
+.conteiner-banner-products{
+    width: 100%;
+}
+.img-fluid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteiner-tittles {
+    background-color: #f5f5f5;
+}
 
 .tittles-section {
     font-size: 1.5rem;
@@ -362,16 +395,15 @@ figure {
     display: flex;
     gap: 1.25rem;
     background-color: #F5F5F5;
-    margin: 0;
+    margin: 0 0 0 3.5rem;
     color: #D2001A;
 }
 
 .second-tittle {
     background-color: #F5F5F5;
     padding: 1rem 0 2rem 2rem;
-    font-size: 1.8rem;
-    color: #D2001A;
-    margin: 0;
+    font-size: 2rem;
+    margin: 0 0 0 3.5rem;
 }
 
 /*Filtro*/
@@ -379,8 +411,8 @@ figure {
 aside {
     grid-area: 1 / 1 / 3 / 2;
     background-color: #F5F5F5;
-
     padding-right: 0;
+    margin-left: 3rem;
 }
 
 .filler {
@@ -409,9 +441,15 @@ h3 {
     padding: 0.5rem 0 1rem 2.5rem;
 }
 
+.price-filler-tittle {
+    padding: 1rem 0;
+}
+.box-filler-price{
+    padding: 0.5rem 0;
+}
 .price-filler {
-    display: flex;
-    justify-content: left;
+    text-decoration: none;
+    color: black;
 }
 
 .conteiner-memory-ram {
@@ -433,7 +471,7 @@ h3 {
 
 .internal-memory {
     justify-content: left;
-    padding: 1rem 0 1rem 2.5rem;
+    padding: 0.5rem 0 1rem 2.5rem;
 }
 
 .memoria-interna {
@@ -445,6 +483,14 @@ h3 {
 }
 
 @media screen and (max-width:576px) {
+    .tittles-section{
+        padding-left: 1rem;
+        margin: 0;
+    }
+    .second-tittle{
+        padding-left: 1rem;
+        margin: 0;
+    }
     .col-2 {
         display: none;
     }
@@ -462,7 +508,13 @@ h3 {
 
     .btn {
         padding: 1rem 2rem;
+        width: 55%;
+        font-size: 20px;
+        border-radius: 0;
+        border: none;
+        box-shadow: 1px 1px 4px 2px #F3E8FF;
     }
+
 
     #filler-drop {
         display: grid;
@@ -481,9 +533,10 @@ h3 {
 
 /*Seccion de productos xiaomi-motorola-samsung*/
 
-.conteiner-fluid {
-    background-color: #F5F5F5;
+#principal-content {
+    background-color: #f5f5f5;
     padding-top: 1.5rem;
+    padding-left: 3rem;
 }
 
 .conteiner-tittle {
@@ -506,11 +559,12 @@ h3 {
 }
 
 #products {
-    padding: 0 1.5rem 1.5rem 2rem;
+    padding: 0 1.5rem 0rem 2rem;
     gap: 1rem;
     width: 100%;
     margin: 0;
     justify-content: center;
+    background-color: #f5f5f5;
 }
 
 .page-link {
@@ -520,15 +574,13 @@ h3 {
 .page-link:hover {
     background-color: #D2001A;
     color: white;
-}
-
-#pagination {
-    padding: 1.5rem 0;
-    margin: 0;
-}
+}  
 
 /*Productos individuales xiaomi-moto-samg*/
-
+#principal-content{
+    margin: auto;
+    padding: 0;
+}
 .tittles-section {
     font-size: 1.8rem;
 }

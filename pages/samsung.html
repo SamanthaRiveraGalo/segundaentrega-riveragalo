@@ -61,21 +61,29 @@
         </nav>
     </header>
 
-    <section class="conteiner">
+     <!--bannercito-->
+
+     <section class="conteiner-banner-products">
+        <img src="../img/banner-samsung1.png" class="img-fluid" alt="banner xiaomi">
+    </section>
+
+    <section class="conteiner conteiner-tittles">
         <div class="row-tittle">
             <h1 class="tittles-section">Samsung</h1>
-            <h2 class="second-tittle">Catálogo</h2>
+            <h2 class="second-tittle">Catálogo de productos</h2>
         </div>
     </section>
 
-    <main class="conteiner-fluid">
-        
+    <main class="conteiner-fluid" id="principal-content">
+
         <!--Estructura del filtro version mobile-->
         <section class="filler-mobile">
             <p class="filler-tittle">
-                <button class="btn btn-light btn-outline-secondary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn bg-light-subtle btn-outline-secondary text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
                     Filtro
+                    <img class="filter-img" src="../assets/bx-filter.svg" alt="">
                 </button>
             </p>
             <div class="collapse" id="collapseExample">
@@ -93,8 +101,10 @@
                         </label>
                     </div>
                     <div class="conteiner-price-filler">
-                        <p class="price-filler">Precios</p>
-                        <input type="range" min="25.000" max="300.000" name="precios" id="price-range">
+                        <p class="price-filler-tittle">Precios</p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Hasta $45.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">$45.000 a $100.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Más de $100.000</a></p>
                     </div>
                     <div class="conteiner-memory-ram">
                         <p class="memory-ram">Memoria Ram</p>
@@ -115,7 +125,7 @@
             </div>
         </section>
         <!--Fin de estructura del filtro version mobile-->
-        
+
         <div class="row" id="all-products">
             <div class="col-2">
                 <!--Filtro-->
@@ -136,8 +146,10 @@
                         </label>
                     </div>
                     <div class="conteiner-price-filler">
-                        <p class="price-filler">Precios</p>
-                        <input type="range" min="25.000" max="300.000" name="precios" id="price-range">
+                        <p class="price-filler-tittle">Precios</p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Hasta $45.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">$45.000 a $100.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Más de $100.000</a></p>
                     </div>
                     <div class="conteiner-memory-ram">
                         <p class="memory-ram">Memoria Ram</p>
@@ -163,13 +175,15 @@
                 <div class="row" id="products">
                     <div id="products-card" class="col-3">
                         <figure>
-                            <a href=""><img class="productimg" src="../img/samsungfold-4.jpg"
-                                    alt="Samsung fold 4"></a>
+                            <a href=""><img class="productimg" src="../img/samsungfold-4.jpg" alt="Samsung fold 4"></a>
                         </figure>
                         <div class="info-product">
                             <p class="name">Samsung Fold 4</p>
                             <p class="memory">12GB/256GB</p>
                             <p class="price">$335.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-c"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -184,6 +198,11 @@
                             <p class="name">Samsung S23 Ultra</p>
                             <p class="memory">12GB/256GB</p>
                             <p class="price">$390.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-c"></button>
+                            <button class="circule-p"></button>
+                            
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -191,21 +210,23 @@
                     </div>
                     <div id="products-card" class="col-3">
                         <figure>
-                            <a href=""><img class="productimg" src="../img/samsungs20fe.jpg"
-                                    alt="samsung s 20fe"></a>
+                            <a href=""><img class="productimg" src="../img/samsungs20fe.jpg" alt="samsung s 20fe"></a>
                         </figure>
                         <div class="info-product">
                             <p class="name">Samsung S20 FE</p>
                             <p class="memory">6GB/128GB</p>
                             <p class="price">$155.000</p>
+                            <button class="circule-blue"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-p"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
                         </div>
                     </div>
-                </div>
 
-                <div class="row" id="products">
+
+
                     <div id="products-card" class="col-3">
                         <figure>
                             <img class="productimg" src="../img/samsungm13.png" alt="samsung m13">
@@ -214,6 +235,8 @@
                             <p class="name">Samsung M13</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$67.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-s"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -222,13 +245,15 @@
 
                     <div id="products-card" class="col-3">
                         <figure>
-                            <img class="productimg" src="../img/samsunga23.jpg"
-                                alt="Samsung A23 4GB/128GB">
+                            <img class="productimg" src="../img/samsunga23.jpg" alt="Samsung A23 4GB/128GB">
                         </figure>
                         <div class="info-product">
                             <p class="name">Samsung A23</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$86.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-blue"></button>
+                            <button class="circule-w"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -237,13 +262,15 @@
 
                     <div id="products-card" class="col-3">
                         <figure>
-                            <a href=""><img class="productimg" src="../img/samsunga04.png"
-                                    alt=""></a>
+                            <a href=""><img class="productimg" src="../img/samsunga04.png" alt=""></a>
                         </figure>
                         <div class="info-product">
                             <p class="name">Samsung A04</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$57.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-w"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -253,17 +280,17 @@
 
                 <!--paginacion-->
 
-                <div id="pagination" class="row">
+                <div id="pagination" class="row pb-4 pt-4 m-0">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
+                        <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
-                                <a class="page-link">Previous</a>
+                                <a class="page-link">Anterior</a>
                             </li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
+                                <a class="page-link" href="#">Siguiente</a>
                             </li>
                         </ul>
                     </nav>
@@ -307,4 +334,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>

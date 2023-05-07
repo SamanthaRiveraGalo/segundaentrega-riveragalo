@@ -61,32 +61,39 @@
                 </div>
             </div>
         </nav>
-
     </header>
+
+    <!--bannercito-->
+
+    <section class="conteiner-banner-products">
+        <img src="../img/bannercito_xiaomi.png" class="img-fluid" alt="banner xiaomi">
+    </section>
 
     <!--Titulos-->
 
-    <section class="conteiner">
+    <section class="conteiner conteiner-tittles">
         <div class="row-tittle">
             <h1 class="tittles-section">Xiaomi</h1>
-            <h2 class="second-tittle">Catálogo</h2>
+            <h2 class="second-tittle">Catálogo de productos</h2>
         </div>
     </section>
 
     <!--Productos-->
 
     <main class="conteiner-fluid" id="principal-content">
-        
+
         <!--Estructura del filtro version mobile-->
         <section class="filler-mobile">
             <p class="filler-tittle">
-                <button class="btn btn-light btn-outline-secondary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn bg-light-subtle btn-outline-secondary text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
                     Filtro
+                    <img class="filter-img" src="../assets/bx-filter.svg" alt="">
                 </button>
             </p>
             <div class="collapse" id="collapseExample">
-                <div id="filler-drop" class="card card-body">
+                <div id="filler-drop" class="card card-body border-0">
                     <div class="phone-brand">
                         <p class="marcas">Marcas</p>
                         <label class="conteiner-checkbox" for="">
@@ -100,8 +107,10 @@
                         </label>
                     </div>
                     <div class="conteiner-price-filler">
-                        <p class="price-filler">Precios</p>
-                        <input type="range" min="25.000" max="300.000" name="precios" id="price-range">
+                        <p class="price-filler-tittle">Precios</p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Hasta $45.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">$45.000 a $100.000</a></p>
+                        <p class="box-filler-price"><a class="price-filler" href="">Más de $100.000</a></p>
                     </div>
                     <div class="conteiner-memory-ram">
                         <p class="memory-ram">Memoria Ram</p>
@@ -122,7 +131,7 @@
             </div>
         </section>
         <!--Fin de estructura del filtro version mobile-->
-        
+
         <div class="row" id="all-products">
             <div class="col-2">
                 <!--Filtro-->
@@ -144,8 +153,10 @@
                             </label>
                         </div>
                         <div class="conteiner-price-filler">
-                            <p class="price-filler">Precios</p>
-                            <input type="range" min="25.000" max="300.000" name="precios" id="price-range">
+                            <p class="price-filler-tittle">Precios</p>
+                            <p class="box-filler-price"><a class="price-filler" href="">Hasta $45.000</a></p>
+                            <p class="box-filler-price"><a class="price-filler" href="">$45.000 a $100.000</a></p>
+                            <p class="box-filler-price"><a class="price-filler" href="">Más de $100.000</a></p>
                         </div>
                         <div class="conteiner-memory-ram">
                             <p class="memory-ram">Memoria Ram</p>
@@ -179,6 +190,8 @@
                             <p class="name">Xiaomi X5 Pro</p>
                             <p class="memory">12GB/256GB</p>
                             <p class="price">$145.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-y"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -193,6 +206,10 @@
                             <p class="name">Xiaomi 12 Pro</p>
                             <p class="memory">8GB/256GB</p>
                             <p class="price">$137.500</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-sb"></button>
+                            <button class="circule-p"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -206,6 +223,9 @@
                             <p class="name">Xiaomi 11 Pro</p>
                             <p class="memory">6GB/128GB</p>
                             <p class="price">$108.000</p>
+                            <button class="circule-grey"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-sb"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -220,6 +240,10 @@
                             <p class="name">Xiaomi Note 12</p>
                             <p class="memory">4GB/128GB</p>
                             <p class="price">$84.000</p>
+                            <button class="circule-b"></button>
+                            <button class="circule-g"></button>
+                            <button class="circule-sb"></button>
+                            <button class="circule-p"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -234,6 +258,10 @@
                             <p class="name">Xiaomi Note 10 PRO</p>
                             <p class="memory">6GB/128GB</p>
                             <p class="price">$97.000</p>
+                            <button class="circule-blue"></button>
+                            <button class="circule-grey"></button>
+                            <button class="circule-sb"></button>
+                            <button class="circule-peach"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -248,6 +276,9 @@
                             <p class="name">Xiaomi Note 11S</p>
                             <p class="memory">8GB/128GB</p>
                             <p class="price">$92.000</p>
+                            <button class="circule-blue"></button>
+                            <button class="circule-grey"></button>
+                            <button class="circule-sb"></button>
                         </div>
                         <div class="conteiner-button">
                             <button class="buy">Comprar</button>
@@ -257,17 +288,17 @@
 
                 <!--Pagination-->
 
-                <div id="pagination" class="row">
+                <div id="pagination" class="row pb-4 pt-4 m-0">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
-                                <a class="page-link">Previous</a>
+                                <a class="page-link">Anterior</a>
                             </li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
+                                <a class="page-link" href="#">Siguiente</a>
                             </li>
                         </ul>
                     </nav>
